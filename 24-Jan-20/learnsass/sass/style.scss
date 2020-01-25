@@ -1,0 +1,76 @@
+@import "profile";
+@import "reset";
+// $primary-color: red;
+// div {
+//     width: 3000px;
+//     height: 150px;
+//     background-color: rgb(141, 141, 137);
+//     overflow: hidden;
+//     h1 {
+//         color: $primary-color;
+//     }
+
+//     nav {
+//         width: 600px;
+//         height: auto;
+//         background-color: green;
+//         ul {
+//             list-style: none;
+//             overflow: hidden;
+//             li {
+//                 float: left;
+//                 margin-right: 10px;
+//                 a {
+//                     text-decoration: none;
+//                     color: white;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// %panel {
+//     border: 1px solid #333;
+//     background-color: yellow;
+//     margin: 5px;
+//     color: #333;
+// }
+// //ประกาศฟังก์ชั่น
+// @mixin border-radius($radius) {
+//     -webkit-border-radius: $radius;
+//         -moz-border-radius: $radius;
+//         -ms-border-radius: $radius;
+//             border-radius: $radius;
+// }
+
+// .first-panel {
+//     @include border-radius(10px);
+//     @extend %panel;
+//     font-size: 12px;
+//     padding: 5px;
+// }
+
+// .second-panel {
+//     @include border-radius(30px);
+//     @extend %panel;
+//     font-size: 24px;
+//     padding: 20px;
+// }
+
+
+
+.container {
+    width: 100%;
+    //960px คือความกว้าง container ของเว็บ * กับ 100%
+    .div1 {
+        width: 400px / 960px * 100%;
+        background: red;
+        float: left;
+    }
+    
+    .div2 {
+        float: left;
+        width: 400px / 960px * 100%;
+        background: green;
+    }
+}
