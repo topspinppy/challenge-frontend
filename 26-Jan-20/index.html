@@ -1,127 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mind Solution | รับพัฒนา Application เว็บ Application</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Arrow</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <body id="fullpage">
 
-<body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src='./img/Arrow.png' width="100px" />
-                </div>
-                <ul class="menu">
-                    <li><a href="#">บริการของเรา</a></li>
-                    <li><a href="#">ผลงาน</a></li>
-                    <li><a href="#">ทีมงาน</a></li>
-                    <li><a href="#">ติดต่อเรา</a></li>
-                </ul>
-            </nav>
-            <div class="header_title">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam temporibus atque inventore culpa beatae
-                in, explicabo amet quasi expedita fugiat animi ducimus ullam earum adipisci ab laudantium, eum
-                accusantium est.
-            </div>
+    <header class="section">
+      <div class="container">
+        <nav>
+          <div class="logo">
+            <img src="./img/Arrow.png" width="100px" />
+          </div>
+          <ul class="menu">
+            <li><a href="#section1">บริการของเรา</a></li>
+            <li><a href="#section3">ผลงาน</a></li>
+            <li><a href="#section4">ลูกค้าของเรา</a></li>
+            <li><a href="#section5">ติดต่อเรา</a></li>
+          </ul>
+        </nav>
+        <div class="header_title">
+          <div class="text">
+            <h1
+              class="typewrite"
+              data-period="2000"
+              data-type='[ "Hi, I am Mind Solution", "I am Creative.", "I Love Design.", "I Love to Develop." ]'
+            >
+              <span class="wrap"> </span>
+            </h1>
+          </div>
+          <div class="getstarted">
+            <a href="#section1" class="getstarted">Get Started !</a>
+          </div>
         </div>
+      </div>
     </header>
 
-    <section class="services">
-        <div class="container">
-            <div class="services_header">
-                <h4>บริการของเรา</h4>
-            </div>
-
-            <div class="service_items_container">
-                <div class="services_items">
-                    <div class="services_item_box">
-                        <div class="services_item_icon">
-                            <img src="./img/light.png" alt="" srcset="">
-                        </div>
-                        <div class="services_item_headers">
-                            Idea
-                        </div>
-                        <div class="services_item_content">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services_items">
-                    <div class="services_item_box">
-                        <div class="services_item_icon">
-                            <img src="./img/pencil-ruler.png" alt="" srcset="">
-                        </div>
-                        <div class="services_item_headers">
-                            Design
-                        </div>
-                        <div class="services_item_content">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
-                </div>
-
-                <div class="services_items">
-                    <div class="services_item_box">
-                        <div class="services_item_icon">
-                            <img src="./img/coding.png" alt="" srcset="">
-                        </div>
-                        <div class="services_item_headers">
-                            Coding
-                        </div>
-                        <div class="services_item_content">
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                            Lorem Ipsum has
-                            been the industry's standard dummy text ever since the 1500s
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="services section" id="section1">
+      <div class="container">
+        <div class="services_header">
+          <h4>บริการของเรา</h4>
         </div>
+
+        <div class="service_items_container">
+          <div class="services_items" data-aos="zoom-in">
+            <div class="services_item_box">
+              <div class="services_item_icon">
+                <img src="./img/light.png" alt="" srcset="" />
+              </div>
+              <div class="services_item_headers">
+                Desktop Application
+              </div>
+              <div class="services_item_content">
+                Desktop Application เป็นเครื่องมือสำคัญของธุรกิจยุคใหม่ ที่ใช้เทคโนโลยีเข้ามาช่วยในการบริหารจัดการภายในองค์กร 
+                ไม่ว่าจะเป็นการจัดการข้อมูลต่างๆ การเก็บข้อมูลของธุรกิจ ผ่านโปรแกรมเฉพาะทางสำหรับองค์กร
+              </div>
+            </div>
+          </div>
+
+          <div class="services_items" data-aos="zoom-in">
+            <div class="services_item_box">
+              <div class="services_item_icon">
+                <img src="./img/pencil-ruler.png" alt="" srcset="" />
+              </div>
+              <div class="services_item_headers">
+                Web Application & Design
+              </div>
+              <div class="services_item_content">
+                ในยุคดิจิทัล สิ่งสำคัญมากๆคือแพลตฟอร์มโลกดิจิทัลที่มีประสิทธิภาพ ซึ่งจะช่วยโปรโมทธุรกิจและบริการผ่านออนไลน์ 
+                ให้เราช่วยสร้างเว็บไซต์และแพลตฟอร์ม ที่ตรงเป้าหมายและดึงดูดใจผู้เข้าชมได้
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-    <section class="ourportfolio">
-        <div class="container">
-            <div class="ourportfolio_header">
-                <p>ผลงานของเรา</p>
-            </div>
-            <div class="ourportfolio_content">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s </p>
-            </div>
+    <section class="ourportfolio section">
+      <div class="container">
+        <div class="ourportfolio_header">
+          <p>ผลงานของเรา</p>
         </div>
+        <div class="ourportfolio_content">
+          <div class="owl-carousel owl-theme">
+            <div>
+              <img src="./img/work/student.png" width="100%" height="250px" />
+            </div>
+            <div>
+              <img src="./img/work/vehecal.jpg" width="100%" height="250px" />
+            </div>
+            <div>
+              <img src="./img/work/std1.png" width="100%" height="250px" />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="ourteam">
-        <div class="container">
-            <div class="ourteam_header">
-                <p>ทีมงาน</p>
-            </div>
-            <div class="ourteam_content">
-
-            </div>
+    <section class="ourteam section" id="section4">
+      <div class="container">
+        <div class="ourteam_header">
+          <p>ลูกค้าของเรา</p>
         </div>
+        <div class="ourteam_content">
+          <div class="ourteam_items" data-aos="fade-up">
+            <img src="./img/clients/khaoyoi.jpg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contactus">
-        <div class="container">
-            <div class="contactus_header">
-                <p> ติดต่อเรา </p>
-            </div>
-            <div class="contactus_content">
-                dddddddddddddddddddddddddd
-            </div>
+    <section class="contactus section">
+      <div class="container">
+        <div class="contactus_header">
+          <p>สนใจทำเว็บไซต์กับเรา ติดต่อที่นี่</p>
         </div>
-    </section>
-</body>
+        <div class="contactus_content">
+          <address>
+              42/6 ถนนคลองกระแชง อำเภอเมือง จังหวัดเพชรบุรี 76000
+          </address>
 
+          <div class="contactus_container">
+              <div class="contactus_items">
+                  <div class="contactus_item_pic">
+                    <img src="./img/phone.png" />
+                  </div>
+                  <div class="contactus_item_content">
+                    <span>เบอร์โทรศัพท์</span>
+                    <p>083-807-0808</p>
+                  </div>
+              </div>
+              <div class="contactus_items">
+                  <div class="contactus_item_pic">
+                    <img src="./img/mail.png" />
+                  </div>
+                  <div class="contactus_item_content">
+                    <span>อีเมล์</span>
+                    <p>mindsolution@gmail.com</p>
+                  </div>
+              </div>
+              <div class="contactus_items">
+                  <div class="contactus_item_pic">
+                    <img src="./img/fb.png" />
+                  </div>
+                  <div class="contactus_item_content">
+                    <span>Facebook</span>
+                    <p>@Mindsolution</p>
+                  </div>
+              </div>
+          </div>
+          <div class="copyright">
+            All Rights Reserved 2020 - Mind Solution
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/typewrite.js"></script>
+    <script src="https://cdnjs.com/libraries/fullPage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".owl-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          responsiveClass: true,
+          autoplay:true,
+          autoplayTimeout:1000,
+          autoplayHoverPause:true,
+          responsive: {
+            0: {
+              items: 1,
+              nav: true
+            },
+            600: {
+              items: 2,
+              nav: false
+            },
+            1000: {
+              items: 3,
+              nav: true,
+              loop: false
+            }
+          }
+        });
+      });
+      AOS.init({
+        offset: 0,
+        duration: 2000
+      });
+    </script>
+  </body>
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v5.0'
+        });
+        };
+
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/th_TH/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+        page_id="105126607623519"
+    logged_in_greeting="สวัสดี เราสามารถช่วยอะไรคุณได้บ้าง !"
+    logged_out_greeting="สวัสดี เราสามารถช่วยอะไรคุณได้บ้าง !">
+    </div>
 </html>
