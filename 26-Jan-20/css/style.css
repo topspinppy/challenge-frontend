@@ -49,6 +49,36 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 20%;
+}
+
+.loader.hidden {
+    animation: fadeOut 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 .container {
     max-width: 1173px;
     width: 98%;
@@ -58,7 +88,7 @@ table {
 header {
     width: 100%;
     height: 950px;
-    background: url('../img/code.jpg') no-repeat;
+    background: url('../img/mac-min.jpg') no-repeat;
     opacity: 0.9;
     clip-path: polygon(0 78%, 0 0, 100% 0, 100% 80%, 50% 100%);
     background-size: cover;
@@ -81,6 +111,7 @@ nav ul.menu li {
 
 nav ul.menu li a {
     color: #fff;
+    text-shadow: 2px 2px 4px #000000;
     text-decoration: none;
     transition: .2s;
 }
@@ -134,6 +165,7 @@ nav ul.menu li a:hover {
 
 .services_header {
     margin-top: 4em;
+    text-shadow: 1x 1px 3px #000000;
 }
 
 .services_header h4 {
@@ -179,7 +211,7 @@ nav ul.menu li a:hover {
 .ourportfolio {
     width: 100%;
     height: 950px;
-    background: url('../img/macbook.jpg') no-repeat;
+    background: url('../img/working.jpg') no-repeat;
     clip-path: polygon(100% 80%, 51% 100%, 0 80%, 0 0, 51% 22%, 100% 0);
     background-size: cover;
 }
@@ -189,6 +221,7 @@ nav ul.menu li a:hover {
     text-align: center;
     font-size: 3em;
     position: relative;
+    color: white;
 }
 
 .ourportfolio_header p:before {
@@ -228,6 +261,10 @@ nav ul.menu li a:hover {
     width: 100px;
     border-bottom: 3px solid #c8235d;
     bottom: -20px;
+}
+
+.ourteam_content {
+    padding: 45px;
 }
 
 .ourteam_items {
@@ -280,10 +317,11 @@ address {
     width: 100%;
     margin-top: 2em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;;
 }
 .contactus_items {
     color: white;
+    width: 11em;
 }
 .contactus_items .contactus_item_pic {
     display: flex;
